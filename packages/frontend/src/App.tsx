@@ -21,7 +21,7 @@ import {
     professorPageLoaderFactory,
     SearchWrapper,
 } from "./pages";
-import { Navbar } from "./components";
+import { Navbar, Chatbot } from "./components";
 import "react-toastify/dist/ReactToastify.css";
 import { trpc, trpcClientOptions } from "./trpc";
 import { createIDBPersister } from "./utils/idbPersister";
@@ -113,6 +113,7 @@ function BaseComponent() {
             <ToastContainer />
             <Navbar />
             <Outlet />
+            <Chatbot />
         </>
     );
 }
